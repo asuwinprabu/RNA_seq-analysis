@@ -159,8 +159,8 @@ tcga-rnaseq-pipeline/
 MS Bioinformatics | Northeastern University
 
 - 📧 rajaganesh.a@northeastern.edu
-- 💼 [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
-- 🐙 [GitHub](https://github.com/YOUR_GITHUB)
+- 💼 [LinkedIn](https://www.linkedin.com/in/asuwin-prabu-raja-ganesh-78b2381b1)
+- 🐙 [GitHub](https://github.com/asuwinprabu)
 
 ---
 
