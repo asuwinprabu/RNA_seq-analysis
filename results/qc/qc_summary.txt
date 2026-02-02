@@ -1,0 +1,8 @@
+=== QC Summary ===
+
+Total samples: 100
+Tumor: 50, Normal: 50
+Genes after filtering: 2757
+Library size: 0.0 - 2.7 million
+
+PCA variance: PC1=43.0%, PC2=14.0%

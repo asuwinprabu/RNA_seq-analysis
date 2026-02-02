@@ -1,0 +1,17 @@
+# Data files (too large)
+data/counts/expression.gz
+data/counts/raw_counts.csv
+data/clinical/clinical_raw.tsv.gz
+data/clinical/clinical_raw.gz
+
+# R files
+*.rds
+*.RData
+.Rhistory
+
+# Large CSVs in results
+results/**/*.csv
+
+# Keep PDFs and text summaries
+!results/**/*.pdf
+!results/**/*.txt

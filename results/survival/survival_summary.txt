@@ -1,0 +1,32 @@
+=== Survival Analysis Summary ===
+
+Tumor samples analyzed: 50
+Events (deaths): 22 (44.0%)
+Median follow-up: 3.8 years
+
+=== Gene-Level Survival Analysis ===
+Genes tested: 50
+Significant (p < 0.05): 3
+
+Top 10 Survival-Associated Genes:
+    gene       HR      pvalue      padj
+   MEOX2 1.027744 0.004611513 0.2305757
+   FXYD1 1.219677 0.028342907 0.5301256
+ GPIHBP1 1.214882 0.031807536 0.5301256
+   SVEP1 1.091494 0.086880069 0.5578558
+   ABCA9 1.057835 0.096007267 0.5578558
+    CAV1 1.374135 0.123890412 0.5578558
+ LRRN4CL 1.131497 0.145240160 0.5578558
+    CHL1 1.128463 0.152518400 0.5578558
+    MYOC 1.242171 0.166889194 0.5578558
+     MME 1.010981 0.194196932 0.5578558
+
+=== Risk Score Model ===
+Genes in signature: 5
+Signature genes: MEOX2, FXYD1, GPIHBP1, SVEP1, ABCA9
+
+Cox Regression:
+  HR = 1.74 (95% CI: 1.13 - 2.67)
+  p-value = 0.0115
+
+Log-rank test p-value: 0.0560

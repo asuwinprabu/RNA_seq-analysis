@@ -1,0 +1,32 @@
+=== Differential Expression Summary ===
+
+Total genes tested: 2757
+Significant (FDR < 0.05, |log2FC| > 1): 1786
+  - Upregulated: 688
+  - Downregulated: 1098
+
+Top 10 Upregulated:
+            gene_id log2FoldChange         padj
+COL10A1     COL10A1       7.225770 7.435063e-56
+COL11A1     COL11A1       7.348673 4.942306e-48
+MMP11         MMP11       5.923633 1.359316e-40
+LRRC15       LRRC15       3.862821 3.793699e-40
+COMP           COMP       4.789942 3.444338e-32
+CILP2         CILP2       4.342102 7.394911e-26
+PPAPDC1A   PPAPDC1A       3.897541 1.046403e-21
+MMP13         MMP13       5.163130 1.323291e-21
+NKAIN1       NKAIN1       5.814135 3.641726e-21
+LOC283867 LOC283867       4.034235 6.397908e-20
+
+Top 10 Downregulated:
+          gene_id log2FoldChange         padj
+FIGF         FIGF      -6.300091 2.921265e-78
+FXYD1       FXYD1      -4.846637 1.922352e-64
+C18orf34 C18orf34      -4.564055 1.159340e-57
+SCARA5     SCARA5      -6.239105 7.435063e-56
+TMEM132C TMEM132C      -5.567657 8.009399e-56
+MME           MME      -4.355657 2.059880e-55
+MYOC         MYOC      -8.483164 5.604581e-55
+CD300LG   CD300LG      -6.102246 6.311699e-55
+LPL           LPL      -6.038287 2.385326e-53
+MEOX2       MEOX2      -3.895735 3.556004e-52

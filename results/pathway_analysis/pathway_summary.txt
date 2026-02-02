@@ -1,0 +1,61 @@
+=== Pathway Analysis Summary ===
+
+Upregulated genes (log2FC > 1, FDR < 0.05): 688
+Downregulated genes (log2FC < -1, FDR < 0.05): 1098
+
+=== TOP 20 UPREGULATED ===
+   gene_id log2FoldChange         padj
+   COL10A1       7.225770 7.435063e-56
+   COL11A1       7.348673 4.942306e-48
+     MMP11       5.923633 1.359316e-40
+    LRRC15       3.862821 3.793699e-40
+      COMP       4.789942 3.444338e-32
+     CILP2       4.342102 7.394911e-26
+  PPAPDC1A       3.897541 1.046403e-21
+     MMP13       5.163130 1.323291e-21
+    NKAIN1       5.814135 3.641726e-21
+ LOC283867       4.034235 6.397908e-20
+      EPYC       6.446167 1.414085e-19
+     MATN3       3.906774 2.079109e-19
+      IBSP       6.088103 8.242626e-19
+    CTHRC1       3.118127 2.227829e-18
+ C20orf103       3.535445 2.005489e-17
+     INHBA       3.951647 3.352883e-17
+     WISP1       3.687720 1.083821e-16
+    HOXC13       2.816960 1.603815e-16
+     TNNT1       5.735668 2.085048e-16
+      CST1       5.881358 5.639042e-16
+
+=== TOP 20 DOWNREGULATED ===
+  gene_id log2FoldChange         padj
+     FIGF      -6.300091 2.921265e-78
+    FXYD1      -4.846637 1.922352e-64
+ C18orf34      -4.564055 1.159340e-57
+   SCARA5      -6.239105 7.435063e-56
+ TMEM132C      -5.567657 8.009399e-56
+      MME      -4.355657 2.059880e-55
+     MYOC      -8.483164 5.604581e-55
+  CD300LG      -6.102246 6.311699e-55
+      LPL      -6.038287 2.385326e-53
+    MEOX2      -3.895735 3.556004e-52
+  GPIHBP1      -5.076564 7.964539e-52
+ ARHGAP20      -4.930325 3.142206e-51
+     LIFR      -4.784964 9.600153e-51
+     IL33      -4.076044 3.597647e-50
+    SVEP1      -4.435776 6.581444e-50
+     AOC3      -5.416330 7.790829e-50
+      LEP      -7.260306 5.570049e-49
+    ITIH5      -5.596854 4.355084e-48
+     TNXB      -5.526227 4.551437e-48
+    CCL14      -4.062860 5.065001e-48
+
+
+=== FOR FULL PATHWAY ANALYSIS ===
+Upload gene lists to these free online tools:
+  - Enrichr: https://maayanlab.cloud/Enrichr/
+  - DAVID: https://david.ncifcrf.gov/
+  - g:Profiler: https://biit.cs.ut.ee/gprofiler/
+
+Gene list files:
+  - results/pathway_analysis/upregulated_gene_list.txt
+  - results/pathway_analysis/downregulated_gene_list.txt
