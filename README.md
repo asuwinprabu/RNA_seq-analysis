@@ -13,18 +13,53 @@ A reproducible RNA-seq analysis pipeline for identifying prognostic biomarkers i
 
 **Dataset:** TCGA-BRCA (The Cancer Genome Atlas - Breast Invasive Carcinoma)
 - 50 Primary Tumor samples
-- 50 Adjacent Normal samples  
+- 50 Adjacent Normal samples
 - ~20,000 genes analyzed
 
 ## 📊 Key Results
 
-### Differential Expression
-- Clear separation between tumor and normal samples in PCA
-- Identified significant genes dysregulated in tumor tissue
+### Differential Expression Analysis
 
-### Survival Analysis  
-- Developed multi-gene prognostic risk score
-- Risk groups show significant survival differences
+| Metric | Value |
+|--------|-------|
+| Total genes tested | 2,757 |
+| Significant genes (FDR < 0.05, \|log2FC\| > 1) | **1,786** |
+| Upregulated in tumor | 688 |
+| Downregulated in tumor | 1,098 |
+
+**Top Upregulated Genes:**
+| Gene | log2FC | Adjusted p-value |
+|------|--------|------------------|
+| COL11A1 | 7.35 | 4.94e-48 |
+| COL10A1 | 7.23 | 7.44e-56 |
+| MMP11 | 5.92 | 1.36e-40 |
+| MMP13 | 5.16 | 1.32e-21 |
+| COMP | 4.79 | 3.44e-32 |
+
+**Top Downregulated Genes:**
+| Gene | log2FC | Adjusted p-value |
+|------|--------|------------------|
+| MYOC | -8.48 | 5.60e-55 |
+| FIGF | -6.30 | 2.92e-78 |
+| SCARA5 | -6.24 | 7.44e-56 |
+| CD300LG | -6.10 | 6.31e-55 |
+| LPL | -6.04 | 2.39e-53 |
+
+### Survival Analysis
+
+| Metric | Value |
+|--------|-------|
+| Tumor samples analyzed | 50 |
+| Events (deaths) | 22 (44%) |
+| Median follow-up | 3.8 years |
+
+**5-Gene Prognostic Signature:** MEOX2, FXYD1, GPIHBP1, SVEP1, ABCA9
+
+| Metric | Value |
+|--------|-------|
+| Hazard Ratio | **1.74** (95% CI: 1.13 - 2.67) |
+| Cox p-value | **0.012** |
+| Log-rank p-value | 0.056 |
 
 ## 🛠️ Pipeline Overview
 ```
@@ -39,7 +74,7 @@ Input Data → QC → Differential Expression → Pathway Analysis → Survival 
 ### Option 1: Run with Nextflow + Docker (Recommended)
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/tcga-rnaseq-biomarker-pipeline.git
+git clone https://github.com/asuwinprabu/tcga-rnaseq-biomarker-pipeline.git
 cd tcga-rnaseq-biomarker-pipeline
 
 # Download data
@@ -65,7 +100,7 @@ Rscript scripts/R/01_quality_control.R
 # 3. Differential expression
 Rscript scripts/R/02_differential_expression.R
 
-# 4. Pathway analysis  
+# 4. Pathway analysis
 Rscript scripts/R/03_pathway_analysis_simple.R
 
 # 5. Survival analysis
@@ -110,7 +145,7 @@ tcga-rnaseq-pipeline/
 | **Container** | Docker, Singularity |
 | **QC** | DESeq2, PCA |
 | **DE Analysis** | DESeq2 |
-| **Pathway** | Enrichr, GO |
+| **Pathway** | Enrichr, GO, KEGG |
 | **Survival** | survival (R), Cox regression |
 | **Visualization** | ggplot2, pheatmap |
 | **HPC** | SLURM (Northeastern Discovery) |
